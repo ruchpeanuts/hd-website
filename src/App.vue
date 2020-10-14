@@ -21,6 +21,25 @@ export default {};
 </script>
 
 <style>
+.card-title {
+  background-color: rgba(36, 38, 41, 0.4);
+  line-height: 40px;
+  bottom: 0;
+  left: 0;
+  margin-bottom: -1px;
+  position: absolute;
+  width: 100%;
+}
+.card > img {
+  position: relative;
+  height: 218px;
+}
+.card {
+  border: none;
+}
+.cards {
+  padding: 30px;
+}
 .logo {
   width: 50% !important;
 }
@@ -42,14 +61,12 @@ export default {};
   width: 20%;
   text-align: center;
   line-height: 45px;
-  font-size: 20px;
   text-decoration: none;
   color: white;
 }
 
 #mainmenu > a:hover {
-  color: darkgrey;
-  font-size: 21px;
+  font-size: 16px;
 }
 
 #wrap {
@@ -66,12 +83,12 @@ img {
   position: absolute;
 }
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-family: "Cinzel", serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
   margin-top: 10px;
-  font-family: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif;
 }
 </style>

@@ -4,10 +4,12 @@
 
     <div id="wrap">
       <div id="mainmenu">
-        <div class="logo"></div>
-        <router-link to="/"> FOO </router-link>
-
-        <router-link to="/about"> BAR </router-link>
+        <router-link to="/" class="logo"> HD </router-link>
+        <router-link to="/"> DABBA </router-link>
+        <router-link to="/about"> TESTIMONY </router-link>
+        <router-link to="/about"> SERVICES </router-link>
+        <router-link to="/about"> ABOUT US </router-link>
+        <router-link to="/about"> CONTACT </router-link>
       </div>
       <router-view></router-view>
     </div>
@@ -20,8 +22,7 @@ export default {};
 
 <style>
 .logo {
-  /** logo to be floating on the left side of the screen*/
-  float: left;
+  width: 50% !important;
 }
 .content {
   filter: blur(1px);
@@ -34,11 +35,11 @@ export default {};
 }
 #mainmenu {
   display: flex;
-  flex-direction: row-reverse;
+  letter-spacing: 0.1em;
   background-color: rgba(36, 38, 41, 0.4);
 }
 #mainmenu > a {
-  width: 100px;
+  width: 20%;
   text-align: center;
   line-height: 45px;
   font-size: 20px;
@@ -47,7 +48,7 @@ export default {};
 }
 
 #mainmenu > a:hover {
-  color: black;
+  color: darkgrey;
   font-size: 21px;
 }
 
@@ -70,7 +71,7 @@ img {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 10px;
   font-family: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif;
 }
 </style>

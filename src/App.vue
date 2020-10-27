@@ -17,7 +17,26 @@
 </template>
 
 <script>
-export default {};
+import axios from "axios";
+export default {
+  name: "user",
+  data() {
+    return {
+      User: [],
+    };
+  },
+  mounted() {
+    axios
+      .get("https://safe-meadow-94931.herokuapp.com/api/v2/cloud/movies")
+      .then((response) => {
+        console.log(response.data);
+        this.User = response.data;
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  },
+};
 </script>
 
 <style>
@@ -32,10 +51,13 @@ export default {};
 }
 .card > img {
   position: relative;
-  height: 218px;
+  height: 220px;
 }
-.card {
+.card-group > .card {
   border: none;
+}
+.card-group > .card:hover {
+  /** this works, need to setup */
 }
 .cards {
   padding: 30px;

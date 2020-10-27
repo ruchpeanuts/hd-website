@@ -1,7 +1,7 @@
 <template>
 	<div class="featurd">
 		<div class="cards">
-			<b-card-group deck>
+			<b-card-group>
 				<b-card
 					title="Title"
 					img-src="../assets/sabji.jpg"
